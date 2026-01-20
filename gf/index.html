@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <!-- Sætter tegnsæt til UTF-8 så danske bogstaver virker -->
+    <meta charset="UTF-8">
+    <!-- Gør siden responsiv på mobile enheder -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karlstrup Klatrepark - Klatring for alle aldre</title>
+    <!-- Linker til CSS filen -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Henter Google Fonts hurtigere -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Henter Sen font fra Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Hovedindholdet på siden -->
+    <main>
+        <!-- Hero sektion med det store billede og velkomsttekst -->
+        <section id="hjem" class="hero">
+            <picture>
+                <img src="img/hero.jpg" alt="Klatring for alle aldre">
+            </picture>
+            <article class="hero-content">
+                <h2>Karlstrup Klatrepark</h2>
+                <h3>Klatring for alle aldre</h3>
+                <p>Klatring er en fritidsbeskæftigelse som kan samle hele familien. Et aktivt liv begynder i Karlstrup
+                    Klatrepark.</p>
+                <a href="#aktiviteter" class="button">Læs mere</a>
+            </article>
+        </section>
+
+        <!-- Navigation der følger med når man scroller -->
+        <header>
+            <nav>
+                <h1>Karlstrup Klatrepark</h1>
+                <!-- Menu links der hopper til de forskellige sektioner -->
+                <ul>
+                    <li><a href="#hjem">Hjem</a></li>
+                    <li><a href="#aktiviteter">Aktiviteter</a></li>
+                    <li><a href="#proev-at-klatre">Prøv at klatre</a></li>
+                    <li><a href="#kontakt">Kontakt os</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Sektion om aktiviteter -->
+        <section id="aktiviteter" class="activities">
+            <article class="activities-content">
+                <picture>
+                    <img src="img/family.jpg" alt="Familie klatring">
+                </picture>
+                <section class="activities-text">
+                    <h2>Karlstrup Klatrepark er <strong>aktiv livsstil</strong> for hele familien</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip.</p>
+                    <a href="#proev-at-klatre" class="button">Vores aktiviteter</a>
+                </section>
+            </article>
+            <aside class="activities-gallery">
+                <picture>
+                    <img src="img/gallery-1.jpg" alt="Klatring aktivitet 1">
+                </picture>
+                <picture>
+                    <img src="img/gallery-2.jpg" alt="Klatring aktivitet 2">
+                </picture>
+                <picture>
+                    <img src="img/gallery-3.jpg" alt="Klatring aktivitet 3">
+                </picture>
+            </aside>
+        </section>
+
+        <!-- Sektion med klatre-pakker -->
+        <section id="proev-at-klatre" class="try-climbing">
+            <h2>Prøv at klatre!</h2>
+            <p class="intro-text">Hvis du ikke har klatret før, kan det være en udfordring at komme i gang. Med vores
+                klatre-pakker har du mulighed for at snuse til klatring, inden du investerer i udstyr eller melder dig
+                på et klatrehold.</p>
+
+            <!-- De tre klatre-pakker -->
+            <article class="climbing-packages">
+                <article class="package-card">
+                    <picture>
+                        <img src="img/family.jpg" alt="Familie-klatring">
+                    </picture>
+                    <h3>Familie-klatring</h3>
+                    <p>En sjov dag med klatre-aktiviteter for hele familien. I kan frit benytte hele centret, og lade de
+                        mindste bruge klatre- og legeområdet, mens far og mor kravler mod toppen på den store klatrevæg.
+                    </p>
+                    <button class="button">Bestil</button>
+                </article>
+
+                <article class="package-card">
+                    <picture>
+                        <img src="img/junior.jpg" alt="Junior-klatring">
+                    </picture>
+                    <h3>Junior-klatring</h3>
+                    <p>Vores juniorklatrepakke er beregnet på mindre grupper og I får i gruppen stillet en
+                        klatreinstruktør til rådighed i 45 minutter. Herefter kan I klatre i parken i to timer på egen
+                        hånd.</p>
+                    <button class="button">Bestil</button>
+                </article>
+
+                <article class="package-card">
+                    <picture>
+                        <img src="img/children.jpg" alt="Børne-klatring">
+                    </picture>
+                    <h3>Børne-klatring</h3>
+                    <p>Er du klar på at holde en festlig børnefødselsdag i Karlstrup Klatrepark? Børneklatrepakken giver
+                        fri adgang til vores klatre- og legeområde i tre timer samt en plads i café-området til far og
+                        mor.</p>
+                    <button class="button">Bestil</button>
+                </article>
+            </article>
+        </section>
+
+        <!-- Galleri sektion hvor man kan klikke på thumbnails -->
+        <section class="gallery-section">
+            <h2>Galleri</h2>
+            <article class="gallery">
+                <!-- Det store billede der skifter når man klikker på thumbnails -->
+                <figure class="gallery-main">
+                    <img id="gallery-main-image" src="img/gallery-1.jpg" alt="Klatring galleri">
+                    <figcaption class="sr-only">Aktuelt valgt galleri billede</figcaption>
+                </figure>
+                <!-- De små thumbnail billeder man kan klikke på -->
+                <aside class="gallery-thumbnails">
+                    <button class="thumbnail-button" data-image="img/gallery-1.jpg" aria-label="Vis galleri billede 1">
+                        <img src="img/gallery-1.jpg" alt="Klatring galleri thumbnail 1">
+                    </button>
+                    <button class="thumbnail-button" data-image="img/gallery-2.jpg" aria-label="Vis galleri billede 2">
+                        <img src="img/gallery-2.jpg" alt="Klatring galleri thumbnail 2">
+                    </button>
+                    <button class="thumbnail-button" data-image="img/gallery-3.jpg" aria-label="Vis galleri billede 3">
+                        <img src="img/gallery-3.jpg" alt="Klatring galleri thumbnail 3"> -- Beskrivelse
+                    </button>
+                </aside>
+            </article>
+        </section>
+
+        <!-- Sektion om tirsdags-klatring med Andreas -->
+        <section class="tuesday-climbing">
+            <picture>
+                <img src="img/tuesday-background.jpg" alt="Klatrevæg i baggrunden">
+            </picture>
+            <article class="tuesday-content">
+                <!-- Billede af Andreas -->
+                <figure class="tuesday-figure">
+                    <img src="img/andreas.jpg" alt="Andreas fra Karlstrup Klatrepark">
+                </figure>
+                <!-- Tekst om tirsdags-klatring -->
+                <section class="tuesday-text">
+                    <h2>Tirsdags-klatring med Andreas</h2>
+                    <p>Andreas har været en aktiv klatrer i mange år. Kom og vær med når han deler ud af tips og tricks
+                        til at udfordre dig selv på klatrevæggen. To sjove timer hvor vi både klatrer, hygger os, får
+                        pulsen op og snakker om det nyeste klatre-gear.</p>
+                    <p class="time-info">Tirsdage <time datetime="17:30">kl. 17.30</time> - <time
+                            datetime="19:30">19.30</time></p>
+                    <button class="button">Tilmeld dig her</button>
+                </section>
+            </article>
+            <!-- Dekorativ streg med farver -->
+            <hr class="tuesday-divider" aria-hidden="true">
+        </section>
+
+        <!-- Kontakt sektion med formular -->
+        <section id="kontakt" class="contact">
+            <h2>Kontakt os</h2>
+            <p class="contact-intro">Vil du spørge om noget?</p>
+            <p>Vores dygtige medarbejdere sidder klar til at svare på dine spørgsmål, uanset om det drejer sig om
+                sikkerhed, priser eller noget helt fjerde.</p>
+
+            <!-- Kontaktformular med validering i JavaScript -->
+            <form id="contact-form" class="contact-form" novalidate>
+                <!-- Navn felt -->
+                <fieldset>
+                    <legend class="sr-only">Kontaktformular</legend>
+                    <label for="name">Fulde navn</label>
+                    <input type="text" id="name" name="name" required>
+                    <!-- Her vises fejlmeddelelser hvis navnet ikke er gyldigt -->
+                    <span class="error-message" id="name-error" role="alert"></span>
+                </fieldset>
+
+                <!-- Email felt -->
+                <fieldset>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <!-- Her vises fejlmeddelelser hvis emailen ikke er gyldig -->
+                    <span class="error-message" id="email-error" role="alert"></span>
+                </fieldset>
+
+                <!-- Besked felt -->
+                <fieldset>
+                    <label for="message">Besked</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <!-- Her vises fejlmeddelelser hvis beskeden ikke er gyldig -->
+                    <span class="error-message" id="message-error" role="alert"></span>
+                </fieldset>
+
+                <button type="submit" class="button">Send besked</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer med kontaktinfo og links -->
+    <footer>
+        <section class="footer-wrapper">
+            <!-- Venstre side med navn og adresse -->
+            <section class="footer-left">
+                <h2>Karlstrup Klatrepark</h2>
+                <address>
+                    Kalkværksvej 5C<br>
+                    2690 Karlslunde<br>
+                    <a href="mailto:hej@klatrepark.dk">hej@klatrepark.dk</a><br>
+                    <a href="tel:+4534567890">+45 3456 7890</a>
+                </address>
+            </section>
+            <!-- Højre side med menu og sociale medier -->
+            <section class="footer-right">
+                <nav>
+                    <ul>
+                        <li><a href="#hjem">Hjem</a></li>
+                        <li><a href="#aktiviteter">Aktiviteter</a></li>
+                        <li><a href="#proev-at-klatre">Prøv at klatre</a></li>
+                        <li><a href="#kontakt">Kontakt os</a></li>
+                    </ul>
+                </nav>
+                <!-- Ikoner til sociale medier -->
+                <ul class="social-links">
+                    <li><a href="#" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a></li>
+                    <li><a href="#" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a></li>
+                    <li><a href="#" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a></li>
+                    <li><a href="#" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a></li>
+                </ul>
+            </section>
+        </section>
+    </footer>
+
+    <!-- JavaScript til galleri funktionalitet -->
+    <script src="js/gallery.js"></script>
+    <!-- JavaScript til formular validering -->
+    <script src="js/form-validation.js"></script>
+</body>
+
+</html>
